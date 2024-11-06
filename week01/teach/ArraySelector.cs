@@ -20,13 +20,13 @@ public static class ArraySelector
         var l2Idx =0;
 
         //Go through each number in the select array
-        for(var i =0; i<select,Length; i++)
+        for(var i =0; i< select.Length; i++)
         {
             //if it is a 1 from list 1
             if (select[i] ==1)
             {
-                result[i] =list[l1Idx];
-                l1Idx++: // move to the bext number in the list1
+                result[i] =list1[l1Idx];
+                l1Idx++; // move to the bext number in the list1
             }
             else //if it is a 2 from list 2
             {
@@ -35,6 +35,6 @@ public static class ArraySelector
             }
         }
 
-        return [];
+        return result;
     }
 }
