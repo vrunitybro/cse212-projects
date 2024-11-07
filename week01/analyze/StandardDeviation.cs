@@ -30,6 +30,11 @@ public static class StandardDeviation {
         return Math.Sqrt(variance);
     }
 
+    // The function iterates through numbers twice:
+    // The first foreach loop calculates the total and count (O(n)).
+    // The second foreach loop calculates the sum of squared differences (O(n)).
+    // Big O Notation: O(n + n) = O(n)
+
     private static double StandardDeviation2(int[] numbers) {
         var sumSquaredDifferences = 0.0;
         var countNumbers = 0;
@@ -48,6 +53,11 @@ public static class StandardDeviation {
 
         var variance = sumSquaredDifferences / countNumbers;
         return Math.Sqrt(variance);
+
+        // This function contains two nested foreach loops:
+        // The outer foreach loop iterates through numbers (O(n)).
+        // The inner foreach loop also iterates through numbers (O(n)).
+        // Big O Notation: O(n × n) = O(n²)
     }
 
     private static double StandardDeviation3(int[] numbers) {
@@ -61,4 +71,19 @@ public static class StandardDeviation {
         var variance = sumSquaredDifferences / count;
         return Math.Sqrt(variance);
     }
+
+    // numbers.Sum() iterates through numbers once (O(n)).
+    // The foreach loop iterates through numbers again (O(n)).
+    // Big O Notation: O(n + n) = O(n)
+
+
+
+//  SortArray Function: O(n²)
+//  StandardDeviation1 Function: O(n)
+//  StandardDeviation2 Function: O(n²)
+//  StandardDeviation3 Function: O(n)
+
+//  
+// Merge Sort Algorithm: O(n log n) — This is an efficient, comparison-based sorting algorithm.
+// Traveling Salesman Problem (TSP): O(2^n) — This represents exponential time complexity, where the time grows extremely fast as n increases.
 }

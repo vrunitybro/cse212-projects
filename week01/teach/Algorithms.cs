@@ -41,7 +41,7 @@ public static class Algorithms {
             count += 1;
 
         return count;
-    }
+    } //Prediction: Since it loops once through the data, it has a time complexity of O(n).
 
     /// <summary>
     /// The count variable is keeping track of the amount
@@ -56,6 +56,7 @@ public static class Algorithms {
             count += 1;
 
         return count;
+        //Prediction: The work grows quadratically with the input size, so the time complexity is O(n²)
     }
 
     /// <summary>
@@ -75,5 +76,22 @@ public static class Algorithms {
         }
 
         return count;
+        //Prediction: The work grows logarithmically, so the time complexity is O(log n)
     }
 }
+
+Algorithm1 (O(n)):
+
+// alg1-count increases linearly with n. For example, when n = 1000, alg1-count = 1000, and when n = 2000, alg1-count = 2000.
+// Time Complexity: The time (alg1-time) increases slowly as n grows, which is consistent with the O(n) prediction.
+// Algorithm2 (O(n²)):
+
+// alg2-count increases quadratically with n. For example, when n = 1000, alg2-count = 1,000,000 (which is 1000²), and when n = 2000, alg2-count = 4,000,000 (which is 2000²).
+// Time Complexity: The time (alg2-time) increases rapidly as n grows, confirming the O(n²) prediction. As n gets larger, the time difference becomes more pronounced.
+// Algorithm3 (O(log n)):
+
+// alg3-count increases logarithmically with n. The count values are much smaller compared to n, and the increase slows as n gets larger. For example, when n = 1000, alg3-count = 10, and even when n increases to 15000, alg3-count only increases to 14.
+// Time Complexity: The time (alg3-time) remains almost constant and extremely low, which is typical for an O(log n) complexity.
+
+// Best Performance: Algorithm3 has the best performance. The alg3-time values remain nearly constant and extremely small even as n grows, confirming that logarithmic time complexity is very efficient.
+// Worst Performance: Algorithm2 has the worst performance. The alg2-time values increase dramatically as n grows, which is expected for quadratic time complexity.

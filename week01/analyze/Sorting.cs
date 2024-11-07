@@ -15,3 +15,8 @@
         }
     }
 }
+
+// Outer Loop: Runs from data.Length - 1 to 0, which is n iterations in the worst case.
+// Inner Loop: Runs from 0 to sortPos, which is also n iterations in the worst case.
+// The inner loop is nested within the outer loop, resulting in a time complexity of:
+// Big O Notation: O(n²)

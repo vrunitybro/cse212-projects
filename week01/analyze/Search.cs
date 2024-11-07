@@ -43,6 +43,10 @@ public static class Search {
         return count; // Didn't find it
     }
 
+//      uses a linear search, going through each element in the list until it finds the target or reaches the end. In the worst-case scenario, it will go through all n elements if the target is not present.
+// Big O Notation: O(n)
+// Explanation: Each iteration checks one element, so the number of operations increases linearly with the size of n. Therefore, this function has a linear time complexity.
+
     /// <summary>
     /// Search for 'target' in the list 'data'. When its found (or not found) the variable count which represents
     /// the work done in the function is returned.
@@ -62,4 +66,13 @@ public static class Search {
         // Search in the lower half before index middle
         return 1 + SearchSorted2(data, target, start, middle - 1);
     }
+
+//      uses a binary search algorithm, recursively dividing the search space in half.
+// Big O Notation: O(log n)
+// Explanation: Binary search has logarithmic time complexity because it repeatedly halves the data set, only requiring log₂(n) comparisons in the worst case, where n is the number of elements. This makes it significantly faster for large datasets compared to a linear search.
+
+
+
+// Big O Performance: SearchSorted1 has a time complexity of O(n), while SearchSorted2 has a time complexity of O(log n).
+// Better Performance in the Worst Case: SearchSorted2 performs better in the worst case, as the logarithmic time complexity makes it faster than linear search, especially as n increases. Therefore, SearchSorted2 has the better performance in the worst case.
 }
