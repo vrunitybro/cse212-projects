@@ -23,7 +23,7 @@ public static class Arrays
 
         for (int i = 0; i < length; i++)
         {
-            multiple[i] = (i +1) * number;
+            multiples[i] = (i +1) * number;
              // Calculate the (i + 1)th multiple of 'number' and assign it to the current position in the array.
         }
 
