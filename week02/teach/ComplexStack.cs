@@ -1,4 +1,18 @@
 ﻿public static class ComplexStack {
+    public static void Main(){
+        Console.WriteLine(CheckBraces("(a == 3 or (b == 5 and c == 6))"));
+
+
+    }
+
+
+
+
+
+
+
+
+
     public static bool DoSomethingComplicated(string line) {
         var stack = new Stack<char>();
         foreach (var item in line) {
