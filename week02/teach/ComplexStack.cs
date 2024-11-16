@@ -23,19 +23,6 @@
 // Output: False (Missing final ), stack contents: ()
 
 
-
-
-
-    }
-
-
-
-
-
-
-
-
-
     public static bool DoSomethingComplicated(string line) {
         var stack = new Stack<char>();
         foreach (var item in line) {
@@ -58,4 +45,10 @@
 
         return stack.Count == 0;
     }
+
+
+
 }
+
+
+
