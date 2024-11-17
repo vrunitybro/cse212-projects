@@ -54,6 +54,11 @@ public class TakingTurnsQueue
         return person;
     }
 
+//     Bug Found:
+// Incorrect handling of turn decrement logic; people were not re-added correctly to the queue when their turns were greater than 1.
+// Queue was improperly managing turns when it became empty.
+// Resolution: Fixed the logic to properly decrement turns and re-add people with valid turns.
+
     public override string ToString()
     {
         return _people.ToString();
