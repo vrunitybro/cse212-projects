@@ -6,9 +6,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 public class PriorityQueueTests
 {
     [TestMethod]
-    // Scenario: 
-    // Expected Result: 
-    // Defect(s) Found: 
+    // Scenario: Enqueue multiple items and dequeue one.
+    // Expected Result: The item with the highest priority is returned.
+    // Defect(s) Found: None (after fixing Dequeue logic).
     public void TestPriorityQueue_1()
     {
         var priorityQueue = new PriorityQueue();
