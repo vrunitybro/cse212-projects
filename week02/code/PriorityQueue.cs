@@ -31,6 +31,7 @@
                 highPriorityIndex = i;
             }
         }
+        //Fixed the loop in the Dequeue method to ensure the correct item with the highest priority is selected.
 
         // Remove and return the item with the highest priority
         var value = _queue[highPriorityIndex].Value;
