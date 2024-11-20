@@ -24,7 +24,26 @@
 
     private static int CountDuplicates(int[] data)
     {
+
         // Add code here.
-        return 0;
+
+         // A set to track unique items
+        var unique = new HashSet<int>();
+
+        // A set to track duplicates
+        var duplicates = new HashSet<int>();
+
+         foreach (var item in data)
+        {
+            if (!unique.Add(item))
+            {
+                // If item is already in the 'unique' set, it's a duplicate
+                duplicates.Add(item);
+            }
+        }
+
+        // The number of duplicates is the size of the duplicates set
+        return duplicates.Count;
+
     }
 }
