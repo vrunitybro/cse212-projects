@@ -25,7 +25,7 @@ public static class Recursion
     /// Using recursion, insert permutations of length
     /// 'size' from a list of 'letters' into the results list.  This function
     /// should assume that each letter is unique (i.e. the 
-    /// function does not need to find unique permutations).
+    /// function does not need to find unique permutations)..
     ///
     /// In mathematics, we can calculate the number of permutations
     /// using the formula: len(letters)! / (len(letters) - size)!
